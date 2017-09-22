@@ -1,4 +1,5 @@
 package com.cybage.aws.services.client;
+
 import java.util.List;
 import java.util.Map.Entry;
 
@@ -65,9 +66,7 @@ public class SQSMessageConsumer {
 					+ "being able to access the network.");
 			System.out.println("Error Message: " + ace.getMessage());
 		}
-
 	}
-
 	public static void main(String[] args) {
 		SQSMessageConsumer consumer = new SQSMessageConsumer();
 		consumer.consumeMessage();
